@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title> Home Page </title>
+    <style>
+      /* For animation of Navigation Bar */
+      #navbar {
+	  background-color: gold; /* Black background color */
+	  position: fixed; /* Make it stick/fixed */
+	  top: 0; /* Stay on top */
+	  width: 100%; /* Full width */
+	  transition: top 0.3s; /* Transition effect when sliding down (and up) */
+      }
+
+      /* Style the navbar links */
+      #navbar a {
+	  float: left;
+	  display: block;
+	  color: white;
+	  text-align: center;
+	  padding: 15px;
+	  text-decoration: none;
+      }
+
+      #navbar a:hover {
+	  background-color: #ddd;
+	  color: black;
+      }
+      .home-intro {}
+    </style>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <header>
+      <a ref="home"> HW </a>
+      <a ref="services">SERVICES</a>
+      <a ref="events">EVENTS</a>
+      <a ref="about_us">ABOUT US</a>
+      <a ref="join_us">JOIN US</a>
+      <a ref="contact_us">CONTACT US</a>
+    </header>
+    
+    <!-- Intro Section with big image -->
+    <div class="home-intro">
+      
+      <h1> Providing professional services for your finances </h1>
+      <p> First paragraph </p>
+      <p> Second paragraph </p>
+    </div>
+    
+    <!-- Feedback from customer -->
+    <div class="customer-feedback">
+      <div class="customer"></div>
+    </div>
+
+    <!-- List of services -->
+    <div class="service-list">
+      <div class="service">
+	<a ref="tax">Tax<\a>
+      </div>
+      <div class="service">
+	<a ref="insurance">Insurance</a>
+      </div>
+      <div class="service">
+	<a ref="investment">investment</a>
+      </div>
+    </div>   
+    
+    <footer>
+      <a href="home">Home</a>
+    </footer>
+    
+    <!-- animation -->
+    <script>
+      var prevScrollpos = window.pageYOffset;
+      window.onscroll = function() {
+	  var currentScrollPos = window.pageYOffset;
+	  if (prevScrollpos > currentScrollPos) {
+	      document.getElementById("navbar").style.top = "0";
+	  }
+	  else {document.getElementById("navbar").style.top = "-50px";}
+	  prevScrollpos = currentScrollPos;
+      }
+    </script>
+  </body>
+</html>
