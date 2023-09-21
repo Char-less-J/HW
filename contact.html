@@ -33,15 +33,24 @@ img{
 
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
-  <div class="w3-bar w3-black w3-card" id="myNavbar">
-    <a href="#home" class="w3-bar-item w3-button w3-wide">LOGO</a>
+  <div class="w3-bar w3-black" id="myNavbar">
+    <a href="/HW" class="w3-bar-item w3-button w3-wide">LOGO</a>
     <!-- Right-sided navbar links -->
     <div class="w3-right w3-hide-small">
-      <a href="#about" class="w3-bar-item w3-button"> <span color="w3-white">ABOUT</span></a>
-      <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i><span color="white">TEAM</span></a>
-      <a href="#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i><span color="white">WORK</span></a>
-      <a href="#pricing" class="w3-bar-item w3-button"><i class="fa fa-usd"></i><span color="white">PRICING</span></a>
-      <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i><span color="white">CONTACT</span></a>
+      <a href="/HW/about.html" class="w3-bar-item w3-button"> <span color="w3-white">关于我们</span></a>
+      <div class="w3-dropdown-hover">
+        <button class="w3-button">
+	  <i class="fa fa-th"></i>服务项目
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+          <a href="/HW/tax.html" class="w3-bar-item w3-button"><span color="white">税务项目</span></a>
+          <a href="/HW/insurance.html" class="w3-bar-item w3-button"><span color="white">保险项目</span></a>
+          <a href="/HW/investment.html" class="w3-bar-item w3-button"><span color="white">投资项目</span></a>
+        </div>
+      </div>
+      <a href="/HW/news.html" class="w3-bar-item w3-button"><i class="fa fa-newspaper"></i><span color="white">新消息</span></a>
+      <a href="/HW/contact.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i><span color="white">联系我们</span></a>
     </div>
     <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
