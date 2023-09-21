@@ -44,7 +44,17 @@ body, html {
     <!-- Right-sided navbar links -->
     <div class="w3-right w3-hide-small">
       <a href="/HW/about.html" class="w3-bar-item w3-button"> <span color="w3-white">关于我们</span></a>
-      <a href="/HW/services.html" class="w3-bar-item w3-button"><i class="fa fa-th"></i><span color="white">服务项目</span></a>
+      <div class="w3-bar-item w3-button">
+        <button class="dropbtn">
+	  <i class="fa fa-th"></i>服务项目
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="/HW/tax.html" class="w3-bar-item w3-button"><span color="white">税务项目</span></a>
+          <a href="/HW/insurance.html" class="w3-bar-item w3-button"><span color="white">保险项目</span></a>
+          <a href="/HW/investment.html" class="w3-bar-item w3-button"><span color="white">投资项目</span></a>
+        </div>
+      </div>
       <a href="/HW/news.html" class="w3-bar-item w3-button"><i class="fa fa-usd"></i><span color="white">新消息</span></a>
       <a href="/HW/contact.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i><span color="white">联系我们</span></a>
     </div>
