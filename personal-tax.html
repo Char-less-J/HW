@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HW Financial Personal Tax Services</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+/* Full height image header */
+.bgimg-tax {
+  background-position: center;
+  background-size: cover;
+  min-height: 100%;
+  background-image:  
+    linear-gradient(
+      rgba(100, 100, 0, 0.55),
+	rgba(100, 100, 0, 0.55)
+    ),
+    url(/HW/docs/assets/images/personal_tax.jpg);
+}
+.w3-bar .w3-button {  padding: 16px;}
+#angela_picture{max-width: 800px;}
+img{
+    width: 80%;
+    object-fit: contain;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card" id="myNavbar">
+    <a href="#home" class="w3-bar-item w3-button w3-wide">LOGO</a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button"> <span color="w3-white">ABOUT</span></a>
+      <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i><span color="white">TEAM</span></a>
+      <a href="#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i><span color="white">WORK</span></a>
+      <a href="#pricing" class="w3-bar-item w3-button"><i class="fa fa-usd"></i><span color="white">PRICING</span></a>
+      <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i><span color="white">CONTACT</span></a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+	
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+  <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
+  <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">WORK</a>
+  <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">PRICING</a>
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+</nav>
+
+
+<!-- Header with full-height image -->
+<header class="bgimg-tax w3-display-container w3-grayscale-min" >
+    <div class="w3-display-left w3-text-white" style="padding:48px">
+      <span class="w3-jumbo w3-hide-small">个人税务服务</span><br>
+      <span class="w3-xxlarge w3-hide-large w3-hide-medium">个人税务服务</span><br>
+      <span class="w3-large">我们提供个人税务和公司税务服务，满足您各种税务相关需求。</span>
+  </div>
+</header>
+<!-- types of resident tax services -->
+<div class="w3-container w3-card w3-white">
+  <h4><b>加拿大居民税务服务</b></h4>
+  <div class="w3-container">
+    <h5 class="w3-opacity"><b>T1个人税</b></h5>
+    <p>我们提供T1个人税服务。</p>
+    <hr>
+  </div>
+  <div class="w3-container">
+    <h5 class="w3-opacity"><b>海外资产申报</b></h5>
+    <p>我们提供海外资产申报服务。</p>
+  </div>
+  <div class="w3-container">
+    <h5 class="w3-opacity"><b>HST/GST return</b></h5>
+    <p></p>
+  </div>
+  <div class="w3-container">
+    <h5 class="w3-opacity"><b>HST/GST rebate</b></h5>
+    <p></p>
+  </div>
+  <div class="w3-container">
+    <h5 class="w3-opacity"><b>税局信件回复</b></h5>
+    <p>帮助您对税局的各种信件进行解读和回复。</p>
+  </div>
+</div>
+<!-- types of non-resident tax services -->
+<div class="w3-container w3-card w3-white">
+  <h4><b>非税务居民税务服务</b></h4>
+  <div class="w3-container">
+    <h5 class="w3-opacity"><b>租金申报</b></h5>
+    <p>包括NR6/NR4/SECTION 216等租金申报服务。</p>
+    <hr>
+  </div>
+  <div class="w3-container">
+    <h5 class="w3-opacity"><b>房屋买卖清税证明</b></h5>
+    <p>我们会帮助您更舒心的结局房产买卖相关的税务问题。</p>
+  </div>
+  <div class="w3-container">
+    <h5 class="w3-opacity"><b>申请临时工卡</b></h5>
+    <p>帮助你更好的在加拿大工作。</p>
+  </div>
+</div>
+
+<!-- Promo Section "Statistics" -->
+<div class="w3-container w3-row w3-center w3-yellow w3-padding-64">
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">14+</span>
+    <br>Partners
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">55+</span>
+    <br>Projects Done
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">89+</span>
+    <br>Happy Clients
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">150+</span>
+    <br>Meetings
+  </div>
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+  
+</footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+
+</body>
+</html>
